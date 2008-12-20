@@ -1,6 +1,6 @@
 Summary:	A fast FrameBuffer based TERMinal emulator for linux
 Name:	  	fbterm
-Version:	1.2
+Version:	1.3
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Terminals
