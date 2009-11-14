@@ -1,10 +1,11 @@
 Summary:	A fast FrameBuffer based TERMinal emulator for linux
 Name:	  	fbterm
-Version:	1.3
-Release:	%mkrel 2
+Version:	1.6
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Terminals
 Source0: 	http://fbterm.googlecode.com/files/%name-%version.tar.gz
+Patch0:		fbterm-1.6-rpmpack.patch
 URL:		http://code.google.com/p/fbterm/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	freetype2-devel
@@ -30,8 +31,10 @@ include:
 
 %prep
 %setup -q
+%patch0 -p1 -b .rpmcheck
 
 %build
+autoreconf -fi
 %configure2_5x
 %make
 
