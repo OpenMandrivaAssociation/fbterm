@@ -1,7 +1,7 @@
 Summary:	A fast FrameBuffer based TERMinal emulator for linux
 Name:	  	fbterm
 Version:	1.7
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Terminals
 Source0: 	http://fbterm.googlecode.com/files/%name-%version.tar.gz
@@ -9,6 +9,8 @@ URL:		http://code.google.com/p/fbterm/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	freetype2-devel
 BuildRequires:	fontconfig-devel
+BuildRequires:  gpm-devel
+BuildRequires:  libx86-devel
 
 %description
 FbTerm is a fast terminal emulator for linux with frame buffer. Features
