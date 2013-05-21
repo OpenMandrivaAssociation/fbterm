@@ -7,7 +7,7 @@ Group:		Terminals
 Source0: 	http://fbterm.googlecode.com/files/%name-%version.tar.gz
 URL:		http://code.google.com/p/fbterm/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	freetype2-devel
+BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	fontconfig-devel
 BuildRequires:  gpm-devel
 BuildRequires:  libx86-devel
