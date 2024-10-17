@@ -5,7 +5,7 @@ Release:	4
 License:	GPLv2+
 Group:		Terminals
 Source0: 	http://fbterm.googlecode.com/files/%name-%version.tar.gz
-URL:		http://code.google.com/p/fbterm/
+URL:		https://code.google.com/p/fbterm/
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	fontconfig-devel
 BuildRequires:  gpm-devel
